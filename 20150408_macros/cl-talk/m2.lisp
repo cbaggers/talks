@@ -18,7 +18,6 @@
   (when (< start n)
     (cons start (this n (+ start 1)))))
 
-
 (defmacro rlambda (args &body body)
   (let ((clean (arg-names args)))
     `(lambda ,args
